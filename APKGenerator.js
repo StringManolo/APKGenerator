@@ -133,9 +133,9 @@ Then you can change/serve a different version of your web when detecting this HT
       }
     }
     if (cli.permissions) {
-      console.log("Under development");
+      console.log("-p, --permissions is not developed yet.");
     }
 
-    console.log(run("cd APKGeneratorBase/src/main && build.one.bash"));
+    console.log(run(`cd APKGeneratorBase/src/main && build.one.bash && mv APKGeneratorBase ${cli.title}`));
   } 
 })();

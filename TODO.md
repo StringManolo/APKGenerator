@@ -1,5 +1,7 @@
 + End permissions argument.  
 
++ Rename project folder after apk build
+
 + Make the script runnable in node.js  
 
 + Custom Files folder to url created apks.  
