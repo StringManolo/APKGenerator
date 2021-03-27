@@ -2,7 +2,7 @@
 Create your apk directly in Termux using this cli tool.
 
 ## Offline working apk
-qjs APKGenerator.js -a myAssets -n ga.stringmanolo.linterna -t Linterna 
+qjs APKGenerator.js -a myAssets -n ga.stringmanolo.example -t Example 
 ## Only online apk 
 qjs APKGenerator.js -u https://example.com -n ga.stringmanolo.example -t Example
 
