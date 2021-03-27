@@ -2,9 +2,9 @@
 Create your apk directly in Termux using this cli tool.
 
 ## Offline working apk
-qjs APKGenerator.js -a myAssets -n ga.stringmanolo.example -t Example 
+qjs --std APKGenerator.js -a myAssets -n ga.stringmanolo.example -t Example 
 ## Only online apk 
-qjs APKGenerator.js -u https://example.com -n ga.stringmanolo.example -t Example
+qjs --std APKGenerator.js -u https://example.com -n ga.stringmanolo.example -t Example
 
 ## Install
 You need the follow packages:
@@ -35,7 +35,7 @@ At the moment this program need internet connection since is downloading APKGene
 I created the default icon using https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html, download the .zip file, move the zip file in the path APKGeneratorBase/src/main/ remove the web_hi_res_512.png file and the res folder. Unzip the .zip, remove the .zip.
 
 + How to use the APKGenerator.js  
-It's like a python script. You usually run them using ```python myScript```. You use ```qjs APKGenerator.js``` instead. To display help message run ```qjs APKGenerator.js --help```
+It's like a python script. You usually run them using ```python myScript```. You use ```qjs --std APKGenerator.js``` instead. To display help message run ```qjs --std APKGenerator.js --help```
 
 + Where is the apk and the apk files  
 The apk is at APKGeneratorBase/src/main/com.example.myApp.apk and also at ~/storage/Download/builtAPKs/com.example.myApp.apk  
