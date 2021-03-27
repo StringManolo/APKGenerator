@@ -72,10 +72,10 @@ Permissions accepts a list of comma separated values, Ex: INTERNET,VIBRATE
 Title is the name of the apk once installed.
 Url is a url of the webpage you want to build the apk from. Requires internet conection.
 
-You can build your apk from an assets folder (works offline) or from a online webpage (add your url same as if you were manually visiting the webpage in a browser.
+You can build your apk from an assets folder (works offline) or from a online webpage (add your url same as if you were manually visiting the webpage in a browser).
 
 If you want to build from url and also have a diferent look on your apk or special version without play around with the files, you can read the X-REQUESTED-WITH header. Should have your apk name as directive. Ex: X-REQUESTED-WITH: ga.stringmanolo.myapp 
-Then you can change serve a different version of your web when detecting this string.  
+Then you can change/serve a different version of your web when detecting this HTTP header directive in server side.  
 
 `);
     return;
