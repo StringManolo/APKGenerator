@@ -18,8 +18,8 @@ You need the follow packages:
 + buildAPKs
 + APKGenerator (this script)
 
-Make sure you hace access to ~/storage/downloads folder.  
-If you don't run ```termux-setup-storage``` (You need to run it for sure if you hace installed Termux for the first time.  
+Make sure you have access to ~/storage/downloads folder.  
+If you didn't run ```termux-setup-storage``` yet (You need to run it for sure if you have installed Termux for the first time) go ahead. 
 
 Install everything by pasting following command ```yes | pkg install quickjs git aapt apksigner dx ecj curl; curl -O https://raw.githubusercontent.com/BuildAPKs/buildAPKs/master/setup.buildAPKs.bash && bash setup.buildAPKs.bash && cp ~/buildAPKs/scripts/bash/build/build.one.bash ~/../usr/bin/ && chmod +775 ~/../usr/bin/build.one.bash; git clone https://github.com/StringManolo/APKGenerator && cd APKGenerator```  
 
@@ -37,4 +37,9 @@ I created the default icon using https://romannurik.github.io/AndroidAssetStudio
 + How to use the APKGenerator.js  
 It's like a python script. You usually run them using ```python myScript```. You use ```qjs APKGenerator.js``` instead. You display help message run ```qjs APKGenerator.js --help```
 
- 
++ Where is the apk and the apk files
+The apk is at APKGeneratorBase/src/main/com.example.myApp and also at ~/storage/Download/builtAPKs/com.example.myApp.  
+All your project files are inside the APKGeneratorBase folder.
+
++ I edited the files, how can i generate the modified apk?
+Move to the path APKGeneratorBase/src/main and run the command ```build.one.bash```
